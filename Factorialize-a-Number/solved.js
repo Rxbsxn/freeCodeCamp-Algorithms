@@ -1,7 +1,9 @@
 function factorialize(num) {
-  for(var i = num; i > 0; i--) {
-    var sum = num * i;
+  var sum = 1;
+  for (let i = 2; i <= num; i++) {
+    sum = sum * i;
   }
+
   return sum;
 }
 
